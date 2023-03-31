@@ -1,5 +1,5 @@
 # Dockerfile used to build a build step that builds snyk-docker-analyzer in CI.
-FROM golang:1.9
+FROM golang:1.19.7
 RUN apt-get update && apt-get install make
 RUN mkdir -p /go/src/github.com/GoogleCloudPlatform/
 RUN ln -s /workspace /go/src/github.com/snyk/snyk-docker-analyzer
